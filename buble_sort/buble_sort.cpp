@@ -8,12 +8,12 @@ int n;
 
 void input() {
 	while (true) {
-		cout << "masukkan banyaknya elemen pada array: ";
+		cout << "Masukkan banyaknya elemen pada array: ";
 		cin >> n;
 		if (n <= 20)
 			break;
 		else {
-			cout << "\narray dapat mempunyai maksimal 20 element. \n";
+			cout << "\nArray dapat mempunyai maksimal 20 element.\n";
 		}
 	}
 	cout << endl;
@@ -30,7 +30,7 @@ void input() {
 
 void bubbleSortArray() {
 	for (int i = 1; i < n; i++) {
-		for (int j = 0; j < -i; j++) {
+		for (int j = 0; j < n -i; j++) {
 			if (a[j] > a[j + 1]) {
 				int temp = a[j];
 				a[j] = a[j + 1];
